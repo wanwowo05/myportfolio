@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wan Halim — Cloud & Automation Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .project-card {
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: all 0.2s ease-in-out;
+    }
+    .project-card:hover {
+      border-color: rgba(34, 211, 238, 0.35);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-300 font-sans antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-mono text-sm font-semibold tracking-wider text-slate-100 hover:text-cyan-400 transition-colors">
+        > wanhalim<span class="text-cyan-400">.dev</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+        <a href="#certifications" class="hover:text-cyan-400 transition-colors">Certifications</a>
+      </nav>
+      <!-- Top "Get in touch" button -->
+      <a href="mailto:wanhalimwowo@gmail.com" class="px-3.5 py-1.5 rounded-md text-xs font-mono font-medium border border-cyan-400/40 text-cyan-300 hover:bg-cyan-500/10 transition-colors">
+        Get in touch
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pt-12 pb-24 space-y-20">
+    <!-- Hero Section -->
+    <section class="space-y-6 max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-cyan-950/60 border border-cyan-500/20 text-cyan-300">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        Available for Cloud & Infrastructure Roles
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-200">Wan Halim</span>.
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 leading-relaxed">
+        Cloud infrastructure and network automation specialist building programmatic tooling, automated remediation systems, and reliable AWS architectures.
+      </p>
+
+      <!-- Action Buttons: GitHub, LinkedIn, Copy Email -->
+      <div class="flex flex-wrap items-center gap-3 pt-2">
+        <a href="https://github.com/wanwowo05" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium transition-colors border border-slate-700">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/wanhalim" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium transition-colors border border-slate-700">
+          <svg class="w-4 h-4 fill-current text-sky-400" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <button id="emailCopyBtn" onclick="copyEmail()" 
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium transition-colors border border-slate-700">
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span id="emailText">wanhalimwowo@gmail.com</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">GitHub Repositories & Projects</h2>
+          <p class="text-xs text-slate-400 mt-1">Direct links to codebases, automation scripts, and infrastructure modules.</p>
+        </div>
+        <a href="https://github.com/wanwowo05?tab=repositories" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-mono font-medium rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors self-start sm:self-auto">
+          View all repositories &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. aws-auto-remediator -->
+        <article class="project-card rounded-xl p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+              <span class="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">Security & Remediation</span>
+              <a href="https://github.com/wanwowo05/aws-auto-remediator" target="_blank" rel="noopener noreferrer" class="hover:underline">Repo ↗</a>
+            </div>
+            <h3 class="text-lg font-semibold text-white">aws-auto-remediator</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Automated AWS compliance remediation system. Listens to CloudTrail events, executes Lambda routines via boto3 to revert drifts, notifies via SNS, and logs to DynamoDB.
+            </p>
+          </div>
+          <div class="pt-6 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Terraform</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Lambda</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">boto3</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">DynamoDB</span>
+          </div>
+        </article>
+
+        <!-- 2. network-flow-analyzer -->
+        <article class="project-card rounded-xl p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+              <span class="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">Network Analysis</span>
+              <a href="https://github.com/wanwowo05/network-flow-analyzer" target="_blank" rel="noopener noreferrer" class="hover:underline">Repo ↗</a>
+            </div>
+            <h3 class="text-lg font-semibold text-white">network-flow-analyzer</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              CLI data processing tool analyzing AWS VPC flow logs. Ingests raw traffic records into pandas DataFrames to pinpoint rejected traffic spikes, port scans, and anomalies.
+            </p>
+          </div>
+          <div class="pt-6 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Python</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">pandas</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">VPC Flow Logs</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">CLI</span>
+          </div>
+        </article>
+
+        <!-- 3. cloud-topology-mapper -->
+        <article class="project-card rounded-xl p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+              <span class="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">CLI & Visualization</span>
+              <a href="https://github.com/wanwowo05/cloud-topology-mapper" target="_blank" rel="noopener noreferrer" class="hover:underline">Repo ↗</a>
+            </div>
+            <h3 class="text-lg font-semibold text-white">cloud-topology-mapper</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Terminal-based AWS infrastructure inspector. Queries VPCs, subnets, route tables, and attached resources, rendering formatted tree maps directly in the terminal with Rich.
+            </p>
+          </div>
+          <div class="pt-6 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Python</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Rich</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">boto3</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">AWS</span>
+          </div>
+        </article>
+
+        <!-- 4. terraform-aws-modules -->
+        <article class="project-card rounded-xl p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+              <span class="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">Infrastructure As Code</span>
+              <a href="https://github.com/wanwowo05" target="_blank" rel="noopener noreferrer" class="hover:underline">Repo ↗</a>
+            </div>
+            <h3 class="text-lg font-semibold text-white">terraform-aws-modules</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Modular Infrastructure-as-Code blueprints for deploying multi-tier AWS environments, partitioned subnets, NAT gateways, and least-privilege IAM policies.
+            </p>
+          </div>
+          <div class="pt-6 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Terraform</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">AWS VPC</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">IAM</span>
+          </div>
+        </article>
+
+        <!-- 5. devops-automation-scripts -->
+        <article class="project-card rounded-xl p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+              <span class="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">Automation & Scripting</span>
+              <a href="https://github.com/wanwowo05" target="_blank" rel="noopener noreferrer" class="hover:underline">Repo ↗</a>
+            </div>
+            <h3 class="text-lg font-semibold text-white">devops-automation-scripts</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Utility toolkit containing PowerShell and Bash scripts for routine host maintenance, AWS credential management, diagnostic runs, and environment setups.
+            </p>
+          </div>
+          <div class="pt-6 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">PowerShell</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Bash</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Linux</span>
+          </div>
+        </article>
+
+        <!-- 6. portfolio-source -->
+        <article class="project-card rounded-xl p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+              <span class="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">Portfolio Website</span>
+              <a href="https://github.com/wanwowo05" target="_blank" rel="noopener noreferrer" class="hover:underline">Repo ↗</a>
+            </div>
+            <h3 class="text-lg font-semibold text-white">wanwowo05.github.io</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Personal engineering site codebase containing clean responsive layouts, project catalogues, and technical experience summaries.
+            </p>
+          </div>
+          <div class="pt-6 flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">HTML5</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Tailwind CSS</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">GitHub Pages</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="space-y-6">
+      <h2 class="text-2xl font-bold text-white tracking-tight border-b border-slate-800 pb-4">Core Competencies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        <div class="glass p-5 rounded-xl space-y-2">
+          <h3 class="text-white font-medium">Cloud & Infrastructure</h3>
+          <p class="text-xs text-slate-400">AWS (VPC, IAM, EKS, Lambda, CloudTrail), Terraform, Kubernetes, Docker</p>
+        </div>
+        <div class="glass p-5 rounded-xl space-y-2">
+          <h3 class="text-white font-medium">Scripting & Data Analysis</h3>
+          <p class="text-xs text-slate-400">Python (boto3, pandas, NumPy, Rich), PowerBI, Tableau, PostgreSQL, PowerShell, Bash, Git</p>
+        </div>
+        <div class="glass p-5 rounded-xl space-y-2">
+          <h3 class="text-white font-medium">Automation & CI/CD</h3>
+          <p class="text-xs text-slate-400">GitHub Actions, Event-Driven Remediation, Infrastructure as Code, Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="space-y-6">
+      <h2 class="text-2xl font-bold text-white tracking-tight border-b border-slate-800 pb-4">Certifications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+        <div class="project-card p-4 rounded-lg flex items-start gap-3">
+          <span class="text-cyan-400 mt-0.5">&#x25CF;</span>
+          <div>
+            <div class="text-white font-medium text-sm">AWS Security: Identity and Access Management (IAM)</div>
+            <div class="text-slate-400">Coursera &bull; AWS</div>
+          </div>
+        </div>
+        <div class="project-card p-4 rounded-lg flex items-start gap-3">
+          <span class="text-cyan-400 mt-0.5">&#x25CF;</span>
+          <div>
+            <div class="text-white font-medium text-sm">Kubernetes in AWS: Create Cluster in EKS</div>
+            <div class="text-slate-400">Coursera</div>
+          </div>
+        </div>
+        <div class="project-card p-4 rounded-lg flex items-start gap-3">
+          <span class="text-cyan-400 mt-0.5">&#x25CF;</span>
+          <div>
+            <div class="text-white font-medium text-sm">Create a Virtual Private Cloud (VPC) Using AWS</div>
+            <div class="text-slate-400">Coursera &bull; AWS</div>
+          </div>
+        </div>
+        <div class="project-card p-4 rounded-lg flex items-start gap-3">
+          <span class="text-cyan-400 mt-0.5">&#x25CF;</span>
+          <div>
+            <div class="text-white font-medium text-sm">Python for Data Analysis: Pandas & NumPy</div>
+            <div class="text-slate-400">Coursera &bull; IBM</div>
+          </div>
+        </div>
+        <div class="project-card p-4 rounded-lg flex items-start gap-3">
+          <span class="text-cyan-400 mt-0.5">&#x25CF;</span>
+          <div>
+            <div class="text-white font-medium text-sm">Network & Multicloud Training Program</div>
+            <div class="text-slate-400">Nexperts Academy</div>
+          </div>
+        </div>
+        <div class="project-card p-4 rounded-lg flex items-start gap-3">
+          <span class="text-cyan-400 mt-0.5">&#x25CF;</span>
+          <div>
+            <div class="text-white font-medium text-sm">Foundations of Business Analysis</div>
+            <div class="text-slate-400">SAP / Google Foundations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Contact Section -->
+    <section class="glass rounded-2xl p-8 sm:p-10 text-center space-y-5">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">Let's Connect</h2>
+      <p class="text-slate-400 max-w-lg mx-auto text-sm">
+        Interested in cloud infrastructure, automation pipelines, or discussing opportunities? Feel free to reach out.
+      </p>
+      <div>
+        <a href="mailto:wanhalimwowo@gmail.com" 
+           class="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-colors">
+          Send Email &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <p>&copy; Wan Halim &bull; All repositories on GitHub</p>
+      <div class="flex items-center space-x-6">
+        <a href="https://github.com/wanwowo05" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300">GitHub</a>
+        <a href="https://www.linkedin.com/in/wanhalim" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300">LinkedIn</a>
+        <a href="mailto:wanhalimwowo@gmail.com" class="hover:text-slate-300">Email</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function copyEmail() {
+      navigator.clipboard.writeText('wanhalimwowo@gmail.com').then(() => {
+        const textSpan = document.getElementById('emailText');
+        const originalText = textSpan.innerText;
+        textSpan.innerText = 'Copied!';
+        setTimeout(() => {
+          textSpan.innerText = originalText;
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
